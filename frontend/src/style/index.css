@@ -1,0 +1,141 @@
+@import "configs/color";
+@import "../../node_modules/react-bootstrap-table/dist/react-bootstrap-table.min.css";
+@import "../../node_modules/react-day-picker/lib/style.css";
+@import "bootstrap_reset.css";
+
+.container {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.content-wrapper {
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  background: #f5f6f8;
+}
+
+h1, h2 {
+  font-family: YourFavoriteFont;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+/*Style preloader*/
+.loader-container{
+  min-height: 140px;
+}
+.loader {
+  border: 7px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 7px solid #3498db;
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  background-color: #e0e0e0;
+  position: absolute;
+  margin: 1rem 1rem 1rem -30px;
+  padding: 1rem;
+  -webkit-animation: spin 1.5s linear infinite; /* Safari */
+  animation: spin 1.5s linear infinite;
+}
+.small-loader {
+  border: 7px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 7px solid #3498db;
+  width: 30px;
+  height: 30px;
+  background-color: #e0e0e0;
+  position: absolute;
+  padding: 1rem;
+  -webkit-animation: spin 1.5s linear infinite; /* Safari */
+  animation: spin 1.5s linear infinite;
+  margin: 1rem 1rem 1rem -30px;
+  left: 40%;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+#main-logo{
+    max-width: 156px;
+}
+
+@import "all.css";
+@import "all2.css";
+
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-4 {
+    flex: 4;
+}
+
+.flex-5 {
+    flex: 5;
+}
+
+
+/*Sobre-escribiendo z-index para el swal*/
+.swal2-container {
+    z-index: 999999;
+}
+
+/*Importando estilos para rc-tabs*/
+@import "../../node_modules/rc-tabs/assets/index.css";
+@import "./rc-tabs.css";

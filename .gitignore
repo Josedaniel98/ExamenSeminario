@@ -1,0 +1,13 @@
+/vendor/
+/bower_components/
+/node_modules/
+/.idea
+/docroot/
+/build/
+.DS_Store
+npm-debug.log
+.eslintcache
+/.env
+*.pyc
+db.sqlite3
+local_settings.py
